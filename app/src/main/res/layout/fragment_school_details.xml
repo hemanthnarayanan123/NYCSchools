@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/schoolDetailsCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/close_school_info"
+        android:focusable="true"
+        android:padding="@dimen/half_margin"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/schoolDetailsCloseButton">
+
+        <TextView
+            style="@style/SchoolDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/school_name" />
+
+        <TextView
+            style="@style/SchoolDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_of_students_appeared" />
+
+        <TextView
+            style="@style/SchoolDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sat_reading_avg_score" />
+
+        <TextView
+            style="@style/SchoolDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sat_math_avg_score" />
+
+        <TextView
+            style="@style/SchoolDetailsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sat_writing_avg_score" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labels"
+        app:layout_constraintTop_toTopOf="@+id/labels">
+
+        <TextView
+            android:id="@+id/schoolName"
+            style="@style/SchoolDetailsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/school_name" />
+
+        <TextView
+            android:id="@+id/schoolTestTakersCount"
+            style="@style/SchoolDetailsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_of_students_appeared" />
+
+        <TextView
+            android:id="@+id/satReadingScore"
+            style="@style/SchoolDetailsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sat_reading_avg_score" />
+
+        <TextView
+            android:id="@+id/satMathScore"
+            style="@style/SchoolDetailsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sat_math_avg_score" />
+
+        <TextView
+            android:id="@+id/satWritingScore"
+            style="@style/SchoolDetailsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sat_writing_avg_score" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

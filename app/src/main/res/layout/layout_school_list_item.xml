@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_height"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:padding="@dimen/default_margin">
+
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLength="@integer/max_school_name_in_list"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_size"
+        android:textStyle="bold"
+        tools:text="School Name" />
+
+    <TextView
+        android:id="@+id/schoolDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/schoolPhone"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_text_size"
+        tools:text="School Name" />
+
+    <TextView
+        android:id="@+id/schoolPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/schoolName"
+        android:background="@drawable/rounded_green"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:gravity="end"
+        android:paddingStart="@dimen/default_margin"
+        android:paddingEnd="@dimen/default_margin"
+        android:text="@string/call"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_text_size" />
+
+</RelativeLayout>

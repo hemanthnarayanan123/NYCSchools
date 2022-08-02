@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SchoolDetailsLabel">
+        <item name="android:layout_marginTop">@dimen/half_margin</item>
+        <item name="android:layout_marginBottom">@dimen/half_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="SchoolDetailsValue" parent="SchoolDetailsLabel">
+        <item name="android:lines">1</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLength">26</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="Widget.Theme.NYCSchools.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.NYCSchools.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>
